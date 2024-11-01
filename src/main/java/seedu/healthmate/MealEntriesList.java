@@ -170,8 +170,8 @@ public class MealEntriesList extends MealList {
         return new MealEntriesList(filteredMeals);
     }
 
+    //@@author DarkDragoono2002
     /**
-     * Credit: Loop by DarkDragoon2002
      * Iterates daily over this list of mealEntries and prints daily consumption bar
      * @param days number of days to go back in time
      * @param user user profile who's the progress bar is built
@@ -190,6 +190,7 @@ public class MealEntriesList extends MealList {
             user.printHistoricConsumptionBar(caloriesConsumed, printDate);
         }
     }
+    //@@author
 
     private LocalDateTime getDateOfMealEntry(int mealNumber) {
         MealEntry mealEntry = (MealEntry) this.mealList.get(mealNumber - 1);

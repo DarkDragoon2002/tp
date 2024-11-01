@@ -190,6 +190,7 @@ public class UI {
                 .map(mealEntry -> mealEntry.toString())
                 .orElse("No maximum meal available");
 
+        //@@author DarkDragoon2002
         double percentOfIdealConsumed = Math.round(100.0 * (float)totalCaloriesConsumed / (float)totalIdealCalories);
         double percentMaxOfIdeal = Math.round(100.0 * (float)maxCaloriesConsumed / (float)idealCalories);
         UI.printString("Stats over past " + days + " days");
@@ -200,6 +201,7 @@ public class UI {
         UI.printString("Heaviest Meal Consumed: " + maxMealString);
         UI.printString("Meals Consumption's Percentage of Total Ideal Calories: " + percentMaxOfIdeal + "%");
         UI.printSeparator();
+        //@@author
 
     }
 
